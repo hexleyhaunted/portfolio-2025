@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './sass/pages/App.scss'
-import Icon from './assets/technology-icons/typescript-icon.svg'
+import data from './cv-data.ts';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-          <Icon/>
+          {data.technologies?.map(({ Icon }) => <Icon />)}
           <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
