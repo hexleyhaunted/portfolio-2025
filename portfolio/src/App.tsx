@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './sass/pages/App.scss'
+import Icon from './assets/technology-icons/typescript-icon.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,9 +9,8 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-        </a>
-        <a href="https://react.dev" target="_blank">
+          <Icon/>
+          <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>

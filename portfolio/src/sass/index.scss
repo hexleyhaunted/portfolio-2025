@@ -10,3 +10,7 @@ body {
   background-color: theme.$base;
   color: theme.$secondary;
 }
+
+svg {
+  fill: theme.$accent;
+}
