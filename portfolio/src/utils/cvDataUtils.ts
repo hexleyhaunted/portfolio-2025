@@ -11,3 +11,7 @@ export function getCvTechnologyByName(name: string) {
 export function getCvTechnologyIconByName(name: string) {
     return getCvTechnologyByName(name)?.Icon;
 }
+
+export function getCvTechnologyRatingByName(name: string) {
+    return getCvTechnologyByName(name)?.rating;
+}
