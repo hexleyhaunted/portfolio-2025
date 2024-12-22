@@ -1,0 +1,9 @@
+@use "iconBox";
+@use "titleBox";
+
+.icon-title-container {
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}

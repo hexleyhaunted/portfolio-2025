@@ -1,0 +1,54 @@
+@use '../theme';
+
+.title-box {
+  position: relative;
+  width: 100%;
+  border: solid 2px theme.$accent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title-loading-block {
+    background-color: theme.$accent;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    animation: load-title 1s forwards cubic-bezier(.98,.03,.83,.67);
+  }
+
+  .title {
+    color: transparent;
+    margin: 0;
+    z-index: 5;
+    position: relative;
+    font-size: 6px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: load-text 1s forwards cubic-bezier(.98,.03,.83,.67);
+  }
+}
+
+@keyframes load-title {
+  0% {
+    min-width: 0;
+  }
+  100% {
+    min-width: 100%;
+  }
+}
+
+@keyframes load-text {
+  0% {
+    color: transparent;
+  }
+  80% {
+    color: transparent;
+  }
+  100% {
+    color: theme.$base;
+  }
+}
