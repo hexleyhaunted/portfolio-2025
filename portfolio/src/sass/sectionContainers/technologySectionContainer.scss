@@ -1,0 +1,27 @@
+@use '../theme';
+
+#technologies-section-container {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px theme.$accent;
+  .title-box {
+    width: 100%;
+    border: solid 2px theme.$accent;
+    h3 {
+      color: theme.$accent;
+      margin: 4px;
+      font-size: 12px;
+      width: 100%;
+      text-align: left;
+      letter-spacing: 2px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+  .technology-blocks-container {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

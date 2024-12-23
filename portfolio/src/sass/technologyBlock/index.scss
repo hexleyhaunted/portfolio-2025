@@ -1,0 +1,15 @@
+@use "iconBox";
+@use "titleBox";
+@use "ratingsColumn";
+
+.technology-block {
+  display: flex;
+  column-gap: 4px;
+}
+
+.icon-title-container {
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
